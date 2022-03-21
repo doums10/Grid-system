@@ -16,6 +16,10 @@ body {
 	margin: 100px auto;
 	padding: 10px;
 	display: grid;
+	/*grid-template-columns: 100px 200px 100px ; une colonne de 100px une de 200px et une de 100px */
+	grid-template-columns: 30% 40% 30% ;
+
+
 }
 .item {
 	background: steelblue;
