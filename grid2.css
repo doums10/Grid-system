@@ -10,6 +10,14 @@ body {
 	height: 100vh;
 	color: #333;
 	background: #f5f5f5;
+	display: grid;
+	/* représentation de la page avec la grille en détail pour les blocks */
+	grid-template-areas:
+		"header header header"
+		"nav content sidebar"
+		"nav footer footer";
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows: 80px 1fr 70px;
 }
 header,
 content,
@@ -18,7 +26,22 @@ main,
 aside,
 nav {
 	background-color: steelblue;
-	color:#fff;
+	color: #fff;
 	padding: 20px;
-	border:skyblue 1px solid;
+	border: skyblue 1px solid;
+}
+header {
+	grid-area: header;
+}
+nav {
+	grid-area: nav;
+}
+main {
+	grid-area: content;
+}
+footer {
+	grid-area: footer;
+}
+aside {
+	grid-area: sidebar;
 }
